@@ -1,0 +1,107 @@
+
+.card{
+margin: 0;
+padding: 0;
+display: flex;
+width: 600px;
+height:200px;
+            &__article{
+            display: flex;
+            
+            }
+    
+
+            // &:hover{
+            // }
+
+            // &_image--container{
+            
+        
+            // }
+                .image{//cambiarnombre
+                width: 200px;
+                height: 200px;
+                border:black double;
+            }
+
+            
+            &__content{
+            width: 200px;
+            height: 200px;
+            color: black;
+            overflow: hidden;
+            background-color: blanchedalmond;
+            font-size: 15px;
+            border:black double;
+            }
+            &_heading{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                
+            }
+
+
+            // &:hover &-image,
+            // &:focus &-image{
+            //     // transform: scaleX(1.2) rotate (5deg) ;
+            //     // transform-origin: center;
+            //     // position: relative;
+            //     // left: 50px;
+            //     // transition: 0.4s ease-out;
+
+            // }
+            // .slider{
+            //     width: ;
+            // }
+            
+
+
+
+
+
+
+
+
+            // @media(min-width:1024){
+            //         &{
+            //             min-width:240px;
+            //         }
+            
+            // }
+            
+            // @media (min-width:426px) and (max-width:768px){
+            //     &{
+            //         min-width: 400px;
+            //         max-width:500px ;
+            //         height: 200px;
+            
+            //     }
+                
+            //     &__article{
+            //         width: 200px;
+            //         height: 200px;
+            //         display: flex;
+            //     }
+            
+            //     & &__image--container,
+            //     & &__image--container{
+            //         width: 40%;
+            //         clip-path: polygon(0 0,100% 0,90% 100%,0% 100%);
+            
+            //     }
+            //     &:hover &__image--container,
+            //     &:focus &__image--container{
+            //     width: 40%;
+            //     clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+            // }
+            
+       // }       
+
+        &:link{
+            text-decoration: none;
+        }
+
+
+
+
+    }
