@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/archivocontacto.css">
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link inicio" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link alta" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link contacto" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link nosotros" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+            <div class="search-bar">     <!--preguntar si va el buscador y el carrito -->
+                    <div class="search-bar__logo-container">
+                        <img src="/imagenes/logo1.png" alt="logoCONNECTICUS">
+                        <div class="banner"></div> 
+                        <img src="/imagenes/loveretro.jpg" alt="loveretro">
+                    </div>
+                    <div class="menu-toggle">
+                        <label class="menu-toggle__label" for="menu">
+                        <span class="menu-toggle__pan-arriba"></span>
+                        <span class="menu-toggle__medallon"></span>
+                        <span class="menu-toggle__pan-abajo"></span>
+                        </label>
+                    </div>
+            </div>
+    </header>
+    <div>
+    <main>
+    <h1 class="title">Contacto</h1>
+    <section class="section-container">
+        <header class="section-container__header">
+            <h2>¿Tenes alguna pregunta o comentario?</h1>
+            <p>No dudes en contactarnos</p>
+        </header>
+            <div class="section-container__direction">
+            <p>Nuestra direccion </p>
+            <p>Calle falsa 1234</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.083278640622!2d-4.460349085074393!3d40.18496007762736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1635812350182!5m2!1ses!2sar"
+            width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+                <div>
+                    <div class="section-container__mail">
+                    <p>Nuestro correo electronico</p>
+                    <a href="mailto:Connecticus@gmail.com" class="section-container__a">Connecticus@gmail.com</a>
+                    <img src="/imagenes/correo.png" alt="icono_correo">
+                </div>
+            <div class="section-container__phone"> 
+                    <p>Nuestro telefono</p><img src="/imagenes/whatsapp.png" alt="icono_whatsapp">
+                    <a href="https//wa.me/tel:+5433221133" target="_blank"class="section-container__a">tel:+5433221133 </a>
+            </div>  
+        <div class="section-container__redes">
+            <p>Seguinos en nuestras redes sociales</p>
+            <div>
+            <a class="section-container__a" href="https://www.instagram.com/">Instagram</a>
+            <img src="/imagenes/instagram-48.png" alt="instagram_logo">
+            </div>
+            <div>
+            <a class="section-container__a" href="https://www.facebook.com/">Twitter</a>
+            <img src="/imagenes/twitter-48.png" alt="twitter_logo">
+            </div>
+            <div>
+            <a class="section-container__a" href="https://twitter.com/">Facebook</a>
+            <img src="/imagenes/facebook-48.png" alt="facebook_logo">
+            </div>
+        </div>
+    </section>
+    <fieldset class="data-container">
+        <legend class="data-container__legend"> Datos </legend>
+                <form class="data-container__form">
+                <label>Motivos de contacto</label>
+                    <select name="motivo" id="motivo" name="motivo" required>
+                        <option>Seleccione el motivo de contacto</option>
+                        <option value="auspiciar">Auspiciar</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="aplicante">Aplicante</option>
+                        <option value="otro">Otro(especifique)</option>
+                    </select>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" autofocus required placeholder="Carlos">
+                <label for="Apellido">Apellido</label>
+                <input type="text" id="Apellido" required placeholder="Sanchez">
+                <label for="mail">Correo electronico</label>
+                <input type="email" id="mail" multiple placeholder="mail@dom.com">
+                <label for="comentario">Comentarios</label>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" class="data-container__textarea">
+                </textarea>
+                <input class="data-container__button"   type="submit" value="Enviar">
+                </form>
+        </fieldset>
+    </div>
+</main>
+    <footer>
+        <div class='pie'>
+            <p>&trade; Connecticus</p> 
+        </div>
+        <div class="button-index">
+            <a href="index.html">Inicio</a>
+        </div>
+</footer>
+</body>
+</html>
