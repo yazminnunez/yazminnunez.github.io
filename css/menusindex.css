@@ -1,0 +1,123 @@
+.menu-categorias{
+    width: 15em;
+    height: 40em;
+    position: absolute;
+    top:30em;
+    left: 1em;
+    background-image: url("/imagenes/fondo8.jpg");
+    background-size: cover;
+    border: black double;
+    font-family: Retroking;
+}
+.separacion{
+    margin: 0.2em;
+    padding: 1.4em;
+}
+.menu-categorias ul{
+    list-style: none;
+    padding: 0.4px;
+}
+
+    .menu-categorias a:link{
+    text-decoration: none;
+    background-color: rgb(0, 74, 134);
+    border-radius: 1em 2em;
+}
+.subrayado{
+    text-decoration: overline underline;
+    color: rgb(0, 0, 0);
+    font-size: 1.6em;
+}
+    .menu-categorias a{
+    display: block;
+    color: black;
+    padding: 0.9em;
+    margin: 1.9em;
+
+    }
+
+.menu-categorias li{
+    
+    list-style: none;
+    border-radius: 0.6em;
+}
+.propagandas{
+    width: 15em;
+    height: 30em;
+    position: absolute;
+    top:103em;
+    left:1em;
+}
+
+.slider{
+    width: 15em;
+    height: 32em;
+    overflow: hidden;
+
+}
+.slider ul{
+    display:flex;
+    animation: cambio 30s infinite alternate;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 20em;
+    height: 100%;
+}
+@keyframes cambio{
+    0% {margin-left: 0;}
+    10% {margin-left: 0;}
+
+    10%{margin-left: -950%;}
+    20%{margin-left: -950%;}
+}
+
+.menu-stuff{
+    font-family: 'Retroking';
+    color: black;
+    width: 15em;
+    height: 25em;
+    position: absolute;
+    top:74em;
+    left: 1em;
+    background-image: url("/imagenes/fondo3.jpg");
+    border-radius: 1em ;
+}
+.menu-stuff p{
+    font-size: 1.3em;
+}
+.menu-stuff a{
+    display: block;
+    margin: 0.5em;
+    font-family: 'Retroking';
+    color: black;
+    font-size: 1.0em;
+    background-color: rgb(29, 137, 226);
+    border-radius: 2em 3em 4em;
+}
+
+
+.menu-stuff a:link{
+    text-decoration: none;
+
+}
+.menu-stuff ul{
+    list-style: none;
+    margin: 0.7em;
+    padding: 0.4em;
+}
+
+.pie p{
+    margin: 0 auto;
+    display: block;
+    width: 8em;
+    height: 2em;
+    color: rgb(206, 120, 7);;
+    font-family: 'Retroking';
+    text-align: center;
+    font-size: 2em;
+}
+

@@ -1,0 +1,79 @@
+.title{
+    font-family: 'Retroking';
+    font-size: 1.5em;
+    color: rgb(206, 120, 7);
+    margin: 1em;
+    text-decoration: underline overline;
+    text-align: center;
+}
+
+.product-container{
+    width: 50%;
+    height: 32%;
+    margin: .1em auto;
+    display:block;
+    justify-content: center;
+    background-image: url("/imagenes/logo2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.product-container__legend{
+    font-family: 'Retroking';
+    font-size: 2.3em;
+    color: rgb(206, 120, 7);
+    margin-left: 5em;
+    padding: 0 1em ;
+}
+.product-container__form{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Retroking';
+    font-size: 1.3em;
+    color: rgb(235, 148, 34);
+    padding: 1em;
+}
+
+
+
+
+.product-container__button{
+    width: 6em;
+    height: 2em;
+    margin: 1em auto;
+    font-family: 'Retroking';
+    font-size: 0.8em;
+    color: black;
+    background-color: rgb(206, 120, 7);
+    border-radius: 2em;
+}
+.product-container__textarea{
+    resize: none;
+    border-radius: 2em;
+}
+
+/* copiado del otro archivo para que ande */
+.footer-container{ 
+    margin: 0 auto;
+    display: block;
+    width: 8em;
+    height: 2em;
+    color: rgb(206, 120, 7);;
+    font-family: 'Retroking';
+    text-align: center;
+    font-size: 2em;
+    text-align: center;
+}
+
+.button-index{
+    display: block;
+    width: 5em;
+    border-radius: 2em 4em;
+    margin: 0 auto;
+    background-color: chocolate;
+    color: rgb(250, 250, 250);
+    font-family: 'Retroking';
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+}

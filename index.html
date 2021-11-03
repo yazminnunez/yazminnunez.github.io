@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css" media="all">
+    <link rel="stylesheet" href="css/menusindex.css" media="all">
+
+</head>
+<body>
+    <header class="main-header">
+        <input type="checkbox" id="menu">
+        <nav class="nav-bar">
+            <ul class="nav-bar__nav-list">
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link inicio" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link alta" href="alta.html">Alta</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link contacto" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-bar__nav-item">
+                    <a class="nav-bar__nav-link nosotros" href="nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+            <div class="search-bar">
+                <div class="search-bar__logo-container">
+                        <img src="/imagenes/logo1.png" alt="logoCONNECTICUS">
+                    <div class="banner"></div>            <!-- se rompe cuando lo paso a sass bem  search-bar__logo-container--banner -->              
+                        <img src="/imagenes/loveretro.jpg" alt="loveretro">                        
+                </div>  
+                    <!-- hasta aca revisado bem   -->
+                    <form class="search-bar__form-container">
+                        <label class="search-bar__form-label" for="busqueda">Buscar</label>
+                        <input class="search-bar__form-search" id="busqueda" type="search">
+                        <input class="search-bar__form-submit" type="submit" value=" Vamos ">                   
+                    </form>                    
+                    <div class="search-bar__carrito-container ">
+                        <div class="carrito">
+                            <a href="/imagenes/carrito1.png">Comprar</a>
+                        </div>  
+
+                        <div class="menu-toggle">
+                            <label class="menu-toggle__label" for="menu">
+                            <span class="menu-toggle__pan-arriba"></span>
+                            <span class="menu-toggle__medallon"></span>
+                            <span class="menu-toggle__pan-abajo"></span>
+                            </label>
+                        </div>
+                    </div>
+            </div>
+    </header>
+    <main>
+    <section class="section-cards">
+        <header class="section-cards__header">
+            <h1 class="section-cards__header-letter"letra>Bienvenidos</h1>
+            <p>Se encontraron los siguientes productos</p>
+        </header>
+        <!-- creado por mi asi que hay que cambiar nombres -->
+        <div class="menu-categorias">
+        <div class="separacion">
+            <p class="subrayado">Categorias</p>
+            <ul>
+                <li><a href="#">Terror</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Romantica</a></li>
+                <li><a href="#">Belica</a></li>
+                <li><a href="#">Comedia</a></li>
+                <li><a href="#">Accion</a></li>
+            </ul>
+        </div>
+        </div>
+
+            <div class="cards-container">
+                <a href="#" class="card">
+                    <article class="card__article">
+                        <div class="card_image--container">
+                                <img class="image" src="/imagenes/peliculas/blob.jpg" alt="Poster_blob">
+                        </div>
+                        <div class="card__content"> 
+                            <h2 class="card_heading subrayado"> The blob</h2>
+                            <div class="card__description">
+                                <p>A partir de la caída de un meteorito cerca de la ciudad de Pensilvania,
+                                una sustancia viscosa sin forma amenaza con devorar y destruir todo lo que
+                                encuentra a su paso. Steve y sus amigos harán todo lo posible para advertir
+                                a la ciudad que las vidas de todos se encuentran en peligro.</p>
+                                <div class="precio">    
+                                <p>Precio: 1.250$</p>
+                                <p>Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="card">
+                    <article class="card__article">
+                        <div class="card_image--container">
+                            <img src="/imagenes/peliculas/dracula.jpg" alt="" class="image">
+                        </div>
+                        <div class="card__content"> 
+                            <h2 class="card_heading subrayado">Dracula</h2>
+                            <div class="card__description">
+                                <p>Un agente de bienes raíces (Renfield) queda cautivo en un castillo en Transilvania,
+                                propiedad del misterioso conde Drácula, que busca comprar y mudarse a un 
+                                castillo en Londres con motivos mas que perturbadores..</p>
+                                <div class="precio ubicacion">
+                                <p>Precio: 2.230$</p>
+                                <p>Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="card">
+                    <article class="card__article">
+                        <div class="card_image--container">
+                        <img src="/imagenes/peliculas/frankie.jpg" alt="frankenstein" class="image"> 
+                        </div>
+                        <div class="card__content"> 
+                            <h2 class="card_heading subrayado">Frankenstein</h2>
+                            <div class="card__description">
+                                <p>El doctor Frankenstein osa jugar con la esencia de la vida y 
+                                    la muerte. Uniendo partes de cadaveres robados de asesinos y 
+                                    maniaticos crea un monstruo incapaz de ser contenido por medios convencionales...</p>
+                                <div class="precio ubicacion">
+                                    <p>Precio: 1.250$</p>
+                                    <p>Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="#" class="card">
+                    <article class="card__article">
+                        <div class="card_image--container">
+                            <img src="/imagenes/peliculas/hellraiser.jpg" alt="hellraiser" class="image">
+                        </div>
+                        <div class="card__content"> 
+                            <h2 class="card_heading subrayado"> Hellraiser</h2>
+                            <div class="card__description">
+                                <p>Frank Cotton adquiere el llamado cubo de Lamont,
+                                    una especie de acertijo tridimensional que, 
+                                    según se dice, abre las puertas del infierno
+                                    y da acceso a más de un placer sádico ,lo que no sabe es que ...</p>
+                                <div class="precio ubicacion">
+                                <p>Precio: 2.200$</p>
+                                <p>Envio gratis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                    <a href="#" class="card">
+                        <article class="card__article">
+                            <div class="card_image--container">
+                                <img src="/imagenes/peliculas/invisibleman.jpg" alt="elhombreinvisible" class="image">
+                            </div>
+                            <div class="card__content"> 
+                                <h2 class="card_heading subrayado">El hombre invisible</h2>
+                                <div class="card__description">
+                                    <p>Un químico inventa un suero que le permite ser invisible pero
+                                    lo perturba y transforma en un maníaco homicida que quiere 
+                                    conquistar el mundo.</p>
+                                    <div class="precio ubicacion">
+                                    <p>Precio: 1.290$</p>
+                                    <p>Envio gratis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </a>
+
+                        <a href="#" class="card">
+                            <article class="card__article">
+                                <div class="card_image--container">
+                                    <img src="/imagenes/peliculas/kingkong.jpg" alt="kingkong" class="image">
+                                </div>
+                                <div class="card__content"> 
+                                    <h2 class="card_heading subrayado">KingKong</h2>
+                                    <div class="card__description">
+                                        <p>Un equipo de cine van a rodar una película a la misteriosa 
+                                            isla de Teschio, al este de Sumatra. Allí los recién llegados
+                                            descubren la existencia de una civilización prehistórica y de
+                                            una tribu ancestral .. </p>
+                                            <div class="precio ubicacion">
+                                            <p>Precio: 1.300$</p>
+                                            <p>Envio gratis</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+
+                            <a href="#" class="card">
+                                <article class="card__article">
+                                    <div class="card_image--container">
+                                        <img src="/imagenes/peliculas/momia.jpg" alt="la momia" class="image">
+                                    </div>
+                                    <div class="card__content"> 
+                                        <h2 class="card_heading subrayado">Momia</h2>
+                                        <div class="card__description">
+                                            <p>Un grupo de arqueólogos británicos invaden 
+                                                la tumba de un cadáver momificado que resulta
+                                                ser un sumo sacerdote del antiguo Egipto. 
+                                                La momia, que revivirá accidentalmente 3.700 
+                                                años después de su muerte...</p>
+                                                <div class="precio ubicacion">
+                                                <p>Precio: 2.220$</p>
+                                                <p>Envio gratis</p>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </a>
+
+                                <a href="#" class="card">
+                                    <article class="card__article">
+                                        <div class="card_image--container">
+                                            <img src="/imagenes/peliculas/nightlivingdeads.jpg" alt="lanochedelosmuertosvivos" class="image">
+                                        </div>
+                                        <div class="card__content"> 
+                                            <h2 class="card_heading subrayado">La noche de los muertos vivos</h2>
+                                            <div class="card__description">
+                                                <p>Las radiaciones procedentes de un satélite provocan un fenómeno terrorífico:
+                                                    los muertos salen de sus tumbas y atacan a los hombres para alimentarse, la protagonista barbara...
+                                                </p>
+                                                <div class="precio ubicacion">
+                                                    <p>Precio: 2.270$</p>
+                                                    <p>Envio gratis</p>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </article>
+                                </a>
+
+                                    <a href="#" class="card">
+                                        <article class="card__article">
+                                            <div class="card_image--container">
+                                                <img src="/imagenes/peliculas/Nosferatu.jpg" alt="nosferatu" class="image">
+                                            </div>
+                                            <div class="card__content"> 
+                                                <h2 class="card_heading subrayado">Nosferatu</h2>
+                                                <div class="card__description">
+                                                    <p>Un corredor de bienes raíces necesita vender un castillo 
+                                                    cuyo propietario es el excéntrico conde Graf Orlock. El conde, 
+                                                    en realidad, es un vampiro milenario que esparce el terror en
+                                                    la región de Bremen, y se interesa en Ellen, la mujer de Hutter.</p>
+                                                    <div class="precio ubicacion">
+                                                    <p>Precio: 2.200$</p>
+                                                    <p>Envio gratis</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </a>
+
+                                        <a href="#" class="card">
+                                            <article class="card__article">
+                                                <div class="card_image--container">
+                                                    <img src="/imagenes/peliculas/phantomoftheopera.jpg" alt="elfantasmadelaopera" class="image">
+                                                </div>
+                                                <div class="card__content"> 
+                                                    <h2 class="card_heading subrayado">El fantasma de la opera</h2>
+                                                    <div class="card__description">
+                                                        <p>Un enmascarado y desfigurado "fantasma" (erik) que reside en la Ópera de París,
+                                                            y da lugar a asesinatos y mutilaciones en un intento por forzar a los sostenedores
+                                                            del teatro a que hagan la estrella del espectáculo a la mujer que él ama..</p>
+                                                            <div class="precio">
+                                                            <p>Precio: 1.250$</p>
+                                                            <p>Envio gratis</p>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </a>
+
+                                            <a href="#" class="card">
+                                                <article class="card__article">
+                                                    <div class="card_image--container">
+                                                        <img src="/imagenes/peliculas/wolfman.jpg" alt="elhombrelobo" class="image">
+                                                    </div>
+                                                    <div class="card__content"> 
+                                                        <h2 class="card_heading subrayado">El hombre lobo</h2>
+                                                        <div class="card__description">
+                                                            <p>Tras varios años en Estados Unidos, el hijo de un noble
+                                                                inglés regresa a la mansión de su padre en Gales. 
+                                                                Una noche que asiste a una feria zíngara es mordido por
+                                                                un lobo y su vida comienza a cambiar cuando teme ser el 
+                                                                responsable de las muertes que se están produciendo en la
+                                                                localidad.</p>
+                                                                <div class="precio">
+                                                                <p>Precio: 2.250$</p>
+                                                                <p>Envio gratis</p>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                            </a>
+            </div>
+            <div class="menu-stuff">
+                <div class="">
+                    <p class="">Descubrir</p>
+                    <ul class="">
+                        <li><a href="#">Series </a></li>
+                        <li><a href="#">Caricaturas</a></li>
+                        <li><a href="#">Coleccion Retro</a></li>
+                    </ul>
+                </div>  
+                <div class="">
+                    <p class="">Interès</p>
+                    <ul class="">
+                        <li><a href="#">Ver peliculas online</a></li>
+                        <li><a href="#">Link vistas en grupo</a></li>
+                        <li><a href="#">Conocer nuestros auspiciantes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- propagandas -->
+            <aside class="propagandas">
+            <div class="slider">
+                <ul>
+                    <li><img src="/imagenes/cartel1.jpg" alt="cartel1vintage"></li>
+                    <li><img src="/imagenes/cartel2.jpg" alt="cartel2vintage"></li>
+                    <li><img src="/imagenes/cartel3.jpg" alt="cartel3vintage"></li>
+                    <li><img src="/imagenes/cartel4.jpg" alt="cartel4vintage"></li>
+                    <li><img src="/imagenes/cartel5.jpg" alt="cartel5vintage"></li>
+                    <li><img src="/imagenes/cartel7.jpg" alt="cartel7vintage"></li>
+                    <li><img src="/imagenes/cartel6.jpg" alt="cartel6vintage"></li>
+                </ul>
+            </div>  
+            </aside> 
+    </section>
+    
+    </main>
+    <footer>
+        <div class='pie'>
+            <p>&trade; Connecticus</p> 
+        </div>
+    </footer>
+</body>
+</html>
