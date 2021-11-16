@@ -700,7 +700,7 @@ body {
 
 @font-face {
   font-family: "Retroking";
-  src: url("/letras/Retroking.ttf") format("truetype");
+  src: url("letras/Retroking.ttf") format("truetype");
   font-style: normal;
 }
 body {
