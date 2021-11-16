@@ -51,7 +51,7 @@
     top: 30em;
     left: 1em;
     justify-content: center;
-    background-image: url("/imagenes/fondo8.jpg");
+    background-image: url("../imagenes/fondo8.jpg");
     background-size: cover;
     border: black double;
     font-family: "Retroking";
@@ -216,7 +216,7 @@
     position: absolute;
     top: 78em;
     left: 1em;
-    background-image: url("/imagenes/fondo3.jpg");
+    background-image: url("../imagenes/fondo3.jpg");
     border-radius: 1em;
     &--p {
         font-size: 1.3em;
