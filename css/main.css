@@ -950,7 +950,7 @@ header {
   color: black;
   text-align: center;
   font-weight: bolder;
-  background-image: url("/imagenes/fondo12.jpg");
+  background-image: url("../imagenes/fondo12.jpg");
   border-radius: 3em;
 }
 .history-container__objetives {
@@ -1010,7 +1010,7 @@ header {
   justify-content: space-around;
   width: 45em;
   height: 14em;
-  background-image: url("/imagenes/animacion.gif");
+  background-image: url("../imagenes/animacion.gif");
   background-size: 100% 100%;
   background-repeat: repeat-x;
 }
@@ -1020,7 +1020,7 @@ header {
   margin: 1em;
   padding: 0.4em;
   text-align: center;
-  background-image: url("/imagenes/fondo4.jpg");
+  background-image: url("../imagenes/fondo4.jpg");
   background-position: center;
 }
 .container_options--sponsors a:link {
@@ -1037,7 +1037,7 @@ header {
   height: 9em;
   margin: 1em;
   padding: 0.4em;
-  background-image: url("/imagenes/fondo4.jpg");
+  background-image: url("../imagenes/fondo4.jpg");
   background-position: center;
   text-align: center;
 }
