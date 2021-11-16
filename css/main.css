@@ -727,7 +727,7 @@ header {
   margin: 0.1em auto;
   display: block;
   justify-content: center;
-  background-image: url("/imagenes/logo2.png");
+  background-image: url("../imagenes/logo2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
