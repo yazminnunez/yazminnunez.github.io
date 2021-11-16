@@ -814,7 +814,7 @@ header {
   grid-template-columns: repeat 3, 1fr;
   margin: 1em auto;
   padding: 1em;
-  background-image: url("/imagenes/fondo12.jpg");
+  background-image: url("../imagenes/fondo12.jpg");
   background-position: center;
   border-radius: 2em;
 }
@@ -893,7 +893,7 @@ header {
   margin: 0.1em auto;
   display: block;
   justify-content: center;
-  background-image: url("/imagenes/logo2.png");
+  background-image: url("../imagenes/logo2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
