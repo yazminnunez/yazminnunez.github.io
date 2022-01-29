@@ -1,0 +1,42 @@
+{{#if productos.length}}
+        <table>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Nombre</th>
+                    <th>Tipo</th>
+                    <th>Genero</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Detalles</th>
+                    <th>Foto</th>
+                    <th>Envio</th>
+                    <th>Accion</th>
+                </tr>
+            {{#each productos}}
+                <tr>
+                    <td>{{categoria}}</td>
+                    <td>{{nombre}}</td>
+                    <td>{{tipo}}</td>
+                    <td>{{genero}}</td>
+                    <td>{{stock}}</td>
+                    <td>{{precio}}</td>
+                    <td>{{detalles}}</td>
+                    <td> 
+                        <img src="{{foto}}" width="50" alt="{{nombre}}" >
+                    </td>
+                    {{#if envio}}
+                        <td>Si</td>
+                        {{else}}
+                            <td>No</td>
+                    {{/if}}
+                    <td>
+                        <button class="button--registration" onclick="PRODUCTS_CONTROLLER.ActualizaProducto({{id}})">Actualizar</button>
+                        <button class="button--registration" onclick="PRODUCTS_CONTROLLER.BorrarProducto({{id}})">Borrar</button>
+                    </td>
+                </tr>
+            {{/each}}
+        </table>
+        
+    {{else}}
+        <h3>No hay productos en la lista</h3>
+{{/if}}
