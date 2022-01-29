@@ -1,0 +1,42 @@
+.section_carrito{
+    padding: 5px;
+    user-select: none;
+    overflow: auto;
+    display: none;
+    position: fixed;
+    color:black;
+    font-family: 'Dongle', sans-serif;
+    font-size: 1.5em;
+    background-image: url("../imagenes/fondo15.jpg");
+    z-index: 1;
+    top:150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+    box-shadow:  .3em .3em 10em .3em rgba(0,0,0,1);
+
+    &--visible{
+        display: block;
+    }
+    button.btn__comprarcarrito{
+        float: right;
+        margin: 15px;
+        width: 100px;
+        height: 35px;
+        font-size: 1.1em;
+        font-weight: bold;
+        font-family: 'retroking';
+        font-size: .8em;
+        background-color: rgb(206, 120, 7);
+        border-radius: .3em;
+    }
+    .button--carrito{
+        margin-left:  .5em;
+        padding: .3em;
+        font-family: 'Retroking';
+        font-size: .5.2em;
+        color: black;
+        background-color: rgb(206, 120, 7);
+        border-radius: .3em;
+    }
+}

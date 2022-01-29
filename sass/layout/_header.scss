@@ -89,6 +89,7 @@
         .search-bar{
             display: inline-block;
             background-image: url("../imagenes/fondo7.jpg");
+            background-size:cover;
             justify-content: space-between;
             border: rgb(255, 255, 255) double;
 
@@ -98,36 +99,16 @@
                     }
                     &__logo-container{
                         display: flex;
-                        &--retro{
-                            height: 12em;
-                            width: 50em;
-                            
-                            @media (max-width:1075px){
-                                    &{
-                                        padding: 1em;
-                                        position: relative;
-                                        left: 10em;
-                                        top:-1em;
-                                        height: 15em;
-                                        width: 17em;
-                                        overflow: hidden;
-                                    }
-                                }
-                            @media (max-width:800px){
-                                    &{
-                                        display:none
-                                    }
-                                }   
-                        }
+                        
                         &--banner{
+                            border: 2em black;
                             height: 14em;
-                            margin: auto;
+                            margin: .1em auto;
                             margin-left: 20em;
                             width: 60em;
                             background-repeat: no-repeat;
-                            background-size: 50% 100%;
-                            animation: banner 10s infinite;
-
+                            background-size: 80% 100%;
+                            animation: banner 20s infinite ;
                                     @media (max-width:1075px){
                                         &{
                                             display:none;
@@ -136,19 +117,28 @@
                         }
                         @keyframes banner {
                             0%,20%{
-                                background-image: url("../imagenes/transicion2.jpg");
+                                background-image: url("../imagenes/blacklagoon.gif");
                             }
-                            20%,40%{
-                                background-image: url("../imagenes/transicion4.jpg");
+                            20%,30%{
+                                background-image: url("../imagenes/casablanca.gif");
                             }
-                            40%,60%{
-                                background-image: url("../imagenes/transicion5.jpg");
+                            30%,40%{
+                                background-image: url("../imagenes/dracula.gif");
                             }
-                            60%,80%{
-                                background-image: url("../imagenes/transicion6.jpg");
+                            40%,50%{
+                                background-image: url("../imagenes/heavencanwait.gif");
+                            }
+                            50%,60%{
+                                background-image: url("../imagenes/frankenstein.gif");
+                            }
+                            60%,70%{
+                                background-image: url("../imagenes/charliechaplin.gif");
+                            }
+                            70%,80%{
+                                background-image: url("../imagenes/gonewiththewind.gif");
                             }
                             80%,100%{
-                                background-image: url("../imagenes/transicion8.jpg");
+                                background-image: url("../imagenes/hellraiser.gif");
                             }
                         }
 
