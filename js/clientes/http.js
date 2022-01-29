@@ -1,6 +1,4 @@
 class Http {
-
-
     async get(url,id) {
         try {
             return await fetch(url+(id||''),{ method: 'get' }).then(r => r.json())

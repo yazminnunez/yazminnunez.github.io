@@ -1,6 +1,4 @@
 class productsController{
-
-    
     async ObtenerProductos(){
         let Productos = await PRODUCTS_SERVICES.ObtenerProductos()
         return Productos

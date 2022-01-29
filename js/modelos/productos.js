@@ -33,3 +33,5 @@ Borrar(id){
 
 
 }
+
+const PRODUCTS_MODEL= new ProductosModel()
