@@ -29,9 +29,6 @@ Borrar(id){
     this.productos.splice(index,1) 
 }
 
-
-
-
 }
 
 const PRODUCTS_MODEL= new ProductosModel()
