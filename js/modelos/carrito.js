@@ -38,9 +38,6 @@ Borrar(id){
     this.carrito.splice(index,1) 
 }
 
-
-
-
 }
 
 const CARRITO_MODEL= new CarritoModel()
