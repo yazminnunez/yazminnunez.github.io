@@ -1,4 +1,11 @@
+import mongoose from 'mongoose'
 
+const prodESQUEMA = mongoose.Schema({
+    nombre : String,
+    precio : Number,
+    stock : Number,
+    
+})
 
 const createproductos = async producto => {
 

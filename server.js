@@ -10,8 +10,6 @@ app.use(express.urlencoded({extended: true}))
 
 app.use('/api/productos', routerproductos)
 
-
-/* ------------ LISTEN DEL SERVIDOR --------------- */
 const PORT = 8080
 const server = app.listen(PORT, () => console.log(`Servidor express escuchando en el puerto ${PORT}`))
 server.on('error', error => console.log(`Error en servidor express: ${error.message}`) )

@@ -1,5 +1,5 @@
-import apiservicios from "../api/productos.js"
 
+import apiservicios from '../api/productos.js'
 
 const  getproductos = async (req,res) => {
     let id = req.params.id
