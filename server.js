@@ -2,6 +2,10 @@
 import express from 'express'
 //const routerproductos = require('./router/productos')
 import routerproductos from './router/productos.js'
+
+import DB_mongo from './model/DB_Mongo.js'
+DB_mongo.conectarDB()
+
 const app = express()
 
 app.use(express.static('public'))
