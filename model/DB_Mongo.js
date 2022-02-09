@@ -1,5 +1,7 @@
 import mongoose from 'mongoose'
 
+//const STR_CNX ='mongodb://localhost/ecommerce'
+const STR_CNX ='mongodb+srv://jazminsORG:O12R34Gorg@cluster0.jsxov.mongodb.net/ecommerce?retryWrites=true&w=majority'
 
 class DB_mongo{
 
@@ -23,7 +25,7 @@ class DB_mongo{
     static async conectarDB(){
         try{ 
                 if(!DB_mongo.conexionOK){
-                    await  mongoose.connect('mongodb://localhost/ecommerce',{
+                    await  mongoose.connect(STR_CNX,{
                         useNewUrlParser : true,
                         useUnifiedTopology : true
                     })

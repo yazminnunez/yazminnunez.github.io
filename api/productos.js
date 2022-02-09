@@ -1,6 +1,6 @@
 //import model from "../model/productos-mem"
-//import model from "../model/productos-file.js"
-import model from '../model/productos-mongodb.js'
+import model from "../model/productos-file.js"
+//import model from '../model/productos-mongodb.js'
 
 
 const obtenerproductos = async () =>{

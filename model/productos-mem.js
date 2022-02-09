@@ -1,6 +1,7 @@
 const productos = []
 
 
+
 function getNextId() {
     let id = 1
     try { id = Number(productos[productos.length-1].id) + 1 }
