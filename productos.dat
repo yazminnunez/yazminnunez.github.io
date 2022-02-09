@@ -10,5 +10,17 @@
 		"detalles": "rjtd",
 		"envio": true,
 		"id": "1"
+	},
+	{
+		"categoria": "Producto de coleccion",
+		"nombre": "rgeh",
+		"tipo": "tjst",
+		"genero": "strhrt",
+		"stock": "11",
+		"precio": "1221",
+		"foto": "zdh",
+		"detalles": "hxt",
+		"envio": false,
+		"id": "2"
 	}
 ]

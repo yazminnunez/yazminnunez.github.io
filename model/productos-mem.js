@@ -1,52 +1,48 @@
-const productos = []
 
 
+class productosMODEL_MEM{
 
-function getNextId() {
-    let id = 1
-    try { id = Number(productos[productos.length-1].id) + 1 }
-    catch {}
+        productos = []
 
-    return id.toString()
+        getNextId() {
+            let id = 1
+            try { id = Number(this.productos[this.productos.length-1].id) + 1 }
+            catch {}
+
+            return id.toString()
+        }
+
+        getIndex(productos, id) {
+            return productos.findIndex( prod => prod.id === id )
+        }
+
+        async createproductos (producto) {
+            producto.id = this.getNextId()
+            this.productos.push(producto)
+            return producto
+        }
+
+        async readproducto (id) {
+            let index = this.getIndex(this.productos,id)
+            let producto = this.productos[index] || {} 
+            return producto
+        }
+
+        async readproductos() {
+            return this.productos
+        }
+
+        async updateproducto (id,producto) {
+            producto.id = id
+            let index = this.getIndex(this.productos,id)
+            this.productos.splice(index,1,producto)
+            return producto
+        }
+
+        async deleteproducto (id) {
+            let index =this.getIndex(this.productos,id)
+            let producto = this.productos.splice(index,1)[0]
+            return producto
+        }
 }
-
-function getIndex(productos, id) {
-    return productos.findIndex( prod => prod.id === id )
-}
-
-const createproductos = async producto => {
-    producto.id = getNextId()
-    productos.push(producto)
-    return producto
-}
-
-const readproducto = async id =>{
-    let index = getIndex(productos,id)
-    let producto = productos[index] || {} 
-    return producto
-}
-
-const readproductos = async () =>{
-    return productos
-}
-
-const updateproducto = async (id,producto) =>{
-    producto.id = id
-    let index = getIndex(productos,id)
-    productos.splice(index,1,producto)
-    return producto
-}
-
-const deleteproducto = async id =>{
-    let index = getIndex(productos,id)
-    let producto = productos.splice(index,1)[0]
-    return producto
-}
-
-export default {
-    createproductos,
-    readproducto,
-    readproductos,
-    updateproducto,
-    deleteproducto
-}
+export default productosMODEL_MEM
