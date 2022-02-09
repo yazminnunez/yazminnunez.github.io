@@ -98,12 +98,28 @@ function LimpiarFormulario(){
     }
 }
 
-        function handlefiles(files){
+function previewfile(file){
+    let reader= new FileReader()
+    reader.readAsDataURL(file)
+    reader.onloadend = function (){
+        let img =document.querySelector('#gallery img')
+        img.src = reader.result
+    }
 
-            
-        }
+}
 
 
+
+
+    function handlefiles(files){
+    let file = files[0]
+    previewfile(file)
+    uploadfiles(file)
+    }
+
+    function uploadfiles(file){
+
+    }
 
 
 
@@ -135,4 +151,10 @@ function LimpiarFormulario(){
         LimpiarFormulario()
         await PRODUCTS_CONTROLLER.GuardarProducto(producto)
     })
+
+    
+
+
+
+
 }

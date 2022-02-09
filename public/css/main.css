@@ -838,6 +838,39 @@ th, td {
   padding: 0.1em 0.6em;
 }
 
+#drop-area {
+  border: 2px dotted #f4f6f8;
+  border-radius: 20px;
+  width: 70%;
+  margin: 0.1em auto;
+  padding: 0.3em;
+}
+
+.buttonn {
+  display: inline-block;
+  margin: 0.9em;
+  padding: 0.1em;
+  background: chocolate;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#fotoarea {
+  display: none;
+}
+
+#gallery img {
+  width: 80px;
+  margin-left: 1em;
+}
+
+#drop-area.highlight {
+  border-color: #1a80e7;
+  color: #1a80e7;
+}
+
 .button--registration {
   margin: 0.3em auto;
   padding: 0.3em;
@@ -1239,4 +1272,9 @@ th, td {
   color: black;
   background-color: #ce7807;
   border-radius: 0.3em;
+}
+@media (max-width: 550px) {
+  .section_carrito {
+    overflow: scroll;
+  }
 }/*# sourceMappingURL=main.css.map */

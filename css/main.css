@@ -838,6 +838,37 @@ th, td {
   padding: 0.1em 0.6em;
 }
 
+#drop-area {
+  border: 2px dotted #f4f6f8;
+  border-radius: 20px;
+  width: 300px;
+  margin: 25px 0;
+  padding: 20px;
+}
+
+.buttonn {
+  display: inline-block;
+  padding: 10px;
+  background: #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#fotoarea {
+  display: none;
+}
+
+#gallery img {
+  width: 100px;
+  margin-top: 10px;
+  vertical-align: middle;
+}
+
+#drop-area.highlight {
+  border-color: #1a80e7;
+}
+
 .button--registration {
   margin: 0.3em auto;
   padding: 0.3em;
@@ -919,14 +950,6 @@ th, td {
 .input-group__error .error-select {
   background-color: #ffcccc;
   color: #990000;
-}
-
-#drop-area {
-  border: 2px dotted #ccc;
-  border-radius: 10px;
-  width: 50%;
-  margin: 25px 0;
-  padding: 20px;
 }
 
 .contact__title {

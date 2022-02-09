@@ -114,6 +114,36 @@
         th,td{
             padding: .1em .6em;
         }
+        #drop-area{
+            border: 2px dotted #f4f6f8 ;
+            border-radius: 20px;
+            width: 70%;
+            margin: .1em auto;
+            padding:.3em ;
+        }
+        .buttonn{
+            display: inline-block;
+            margin: .9em;
+            padding: .1em;
+            background: chocolate;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #fotoarea{
+            display: none;
+        }
+        #gallery img{
+            width: 80px;
+            margin-left: 1em;
+        }
+
+        #drop-area.highlight{
+            border-color: #1a80e7 ;
+            color: #1a80e7;
+        }
 
         .button--registration{
             margin: .3em auto;
@@ -201,14 +231,7 @@
                 }
             }
         }
-        
-        #drop-area{
-            border: 2px dotted #ccc ;
-            border-radius: 10px;
-            width: 50%;
-            margin: 25px 0;
-            padding: 20px;
-        }
+
 
 
 
