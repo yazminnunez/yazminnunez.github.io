@@ -98,6 +98,19 @@ function LimpiarFormulario(){
     }
 }
 
+        function handlefiles(files){
+
+            
+        }
+
+
+
+
+
+
+
+
+
     async function initalta(){
     console.log('initalta')
     inputs =document.querySelectorAll('.product-container__form input')

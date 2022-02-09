@@ -148,19 +148,6 @@
             }
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         .input-group {
             margin: .2em .5em;
             input:not(input[type="checkbox"]) {
@@ -212,15 +199,16 @@
                     background-color: hsl(0, 100%, 90%);
                     color: hsl(0, 100%, 30%);
                 }
-                
-
             }
-
         }
-
-
-
-
+        
+        #drop-area{
+            border: 2px dotted #ccc ;
+            border-radius: 10px;
+            width: 50%;
+            margin: 25px 0;
+            padding: 20px;
+        }
 
 
 

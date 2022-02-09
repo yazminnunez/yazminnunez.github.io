@@ -44,11 +44,22 @@
                             <input type="number" name="precio" id="precio" min="0" max="10000">
                             <div class="error-detail"></div>
                         </div>
-                        <div class="input-group">
+                        <!-- <div class="input-group">
                             <label for="foto">Foto</label>
                             <input type="text" name="foto" id="foto" >
                             <div class="error-detail"></div>
+                        </div> -->
+                        <div id="drop-area">
+                            <p>Subir imagen con File-dialog o Drag and drop </p>
+                            <input type="file" id="foto" accept="imagen/*" onchange="handlefiles(this.files)">
+                            <label class="button" for="foto">File-dialog</label>
+                            <progress id="progresss-bar" max="100" value="0"></progress>
+                            <div id="gallery"><img src="" alt=""></div>
+                        
+                        
+                        
                         </div>
+
                         <div class="input-group">
                             <label for="detalles">Detalles</label>
                             <input class="detalles__size" type="text" name="detalles" id="detalles" >
