@@ -1,6 +1,6 @@
 {{#if productos.length}}    
     {{#each productos}}
-        <div class="card" onclick="AgregarAlCarrito({{id}})">
+        <div class="card" onclick="AgregarAlCarrito('{{id}}')">
             <article class="card__article">
                 <div class="card_image--container">
                 <img class="card__image" src="{{foto}}" alt="foto de {{nombre}}">

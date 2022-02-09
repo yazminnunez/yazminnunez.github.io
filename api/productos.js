@@ -3,10 +3,10 @@
 //const model = new productosMODEL_MEM()
 //const model = new productosMODEL_FILE()
 //const model = new productosMODEL_MONGO()
+//import productosMODEL_MONGO from '../model/productos-mongodb.js'
 
-import productosMODEL_MONGO from '../model/productos-mongodb.js'
-import productoMODEL from '../model/productos.js'
 import config from '../config.js'
+import productoMODEL from '../model/productos.js'
 const model = productoMODEL.get(config.tipo_persistencia)
 
 const obtenerproductos = async () =>{
