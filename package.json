@@ -17,6 +17,9 @@
     "type": "git",
     "url": "git+https://github.com/yazminnunez/yazminnunez.github.io.git"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
