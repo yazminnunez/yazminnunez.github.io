@@ -1,4 +1,3 @@
-const { status } = require("express/lib/response")
 
 let productos = null
 let inputs = null
@@ -78,7 +77,7 @@ function LeerProductoIngresado(){
         genero:inputs[2].value,
         stock:inputs[3].value,
         precio:inputs[4].value,
-        foto:'',
+        foto:URLimagensubida,
        // foto:inputs[5].value,
         detalles:inputs[5].value,
         envio: inputs[6].checked,
@@ -99,7 +98,25 @@ function LimpiarFormulario(){
     for(let i=0;i<camposvalidos.length;i++){
         camposvalidos[i]=false
     }
+    let img =document.querySelector('#gallery img')
+    img.src = ''
+    inicializarProgress()
+    URLimagensubida=''
 }
+
+function inicializarProgress(){
+        progressbar.value =0
+}
+
+function actualizarProgress(porcentaje){
+    progressbar.value = porcentaje
+}
+
+
+
+
+
+
 
 function previewfile(file){
     let reader= new FileReader()
@@ -116,6 +133,7 @@ function previewfile(file){
 
     function handlefiles(files){
     let file = files[0]
+    inicializarProgress()
     previewfile(file)
     uploadfiles(file)
     }
@@ -125,11 +143,16 @@ function previewfile(file){
     var xhr = new XMLHttpRequest()
     xhr.open('POST',url)
 
-    xhr.addEventListener('load',() =>{
-        if(xhr,status == 200){
-           //URLimagensubida
-        }
+    xhr.upload.addEventListener('progress',e =>{
+      let porcentaje = (e.loaded *100) / e.total
+      actualizarProgress(porcentaje)
+    })
 
+    xhr.addEventListener('load',() =>{
+        if(xhr.status == 200){
+            let nombreImagensubida = JSON.parse(xhr.response).nombre
+        URLimagensubida = nombreImagensubida? ('/uploads/' + nombreImagensubida) : '' 
+        } 
     })
 
     var formdata = new FormData()
