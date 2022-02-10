@@ -1,7 +1,12 @@
+const { status } = require("express/lib/response")
+
 let productos = null
 let inputs = null
 let form = null
 let button = null
+let droparea = null
+let progressbar = null
+let URLimagensubida =''
 
     const regExpValidar = [
         /^.+$/,
@@ -9,8 +14,7 @@ let button = null
         /^.+$/,
         /^[0-9]+$/,
         /^[0-9]+$/,
-        /^.+$/,
-        /^.+$/,
+        /^.+$/
     ]
 
     let camposvalidos = [
@@ -19,8 +23,7 @@ let button = null
         false,
         false,
         false,
-        false,
-        false,
+        false
     ]
 
     const AlguncampoNOvalido = () =>{
@@ -30,8 +33,7 @@ let button = null
         camposvalidos[2] &
         camposvalidos[3] &
         camposvalidos[4] &
-        camposvalidos[5] &
-        camposvalidos[6] 
+        camposvalidos[5] 
         return !valido
     }
 
@@ -76,9 +78,10 @@ function LeerProductoIngresado(){
         genero:inputs[2].value,
         stock:inputs[3].value,
         precio:inputs[4].value,
-        foto:inputs[5].value,
-        detalles:inputs[6].value,
-        envio: inputs[7].checked,
+        foto:'',
+       // foto:inputs[5].value,
+        detalles:inputs[5].value,
+        envio: inputs[6].checked,
     }
 }
 
@@ -118,6 +121,22 @@ function previewfile(file){
     }
 
     function uploadfiles(file){
+    var url ='/upload'
+    var xhr = new XMLHttpRequest()
+    xhr.open('POST',url)
+
+    xhr.addEventListener('load',() =>{
+        if(xhr,status == 200){
+           //URLimagensubida
+        }
+
+    })
+
+    var formdata = new FormData()
+    formdata.append('foto',file)
+    xhr.send(formdata)
+
+
 
     }
 
@@ -129,7 +148,7 @@ function previewfile(file){
 
     async function initalta(){
     console.log('initalta')
-    inputs =document.querySelectorAll('.product-container__form input')
+    inputs =document.querySelectorAll('.product-container__form .input-group input')
     form = document.querySelector('.product-container__form')
     button = document.querySelector('button')
     button.disabled= true
@@ -152,8 +171,33 @@ function previewfile(file){
         await PRODUCTS_CONTROLLER.GuardarProducto(producto)
     })
 
-    
+    droparea = document.getElementById('drop-area')
+    progressbar = document.getElementById('progresss-bar')
 
+
+
+
+    ;['dragenter','dragover','dragleave','drop'].forEach(eventName =>{
+        droparea.addEventListener(eventName, e => e.preventDefault())
+        document.body.addEventListener(eventName, e => e.preventDefault())
+    
+    })
+    ;['dragenter','dragover'].forEach(eventName =>{
+        droparea.addEventListener(eventName,() => {
+        droparea.classList.add('highlight')
+        })
+    })
+    ;['dragleave','drop'].forEach(eventName =>{
+        droparea.addEventListener(eventName,() => {
+            droparea.classList.remove('highlight')
+        })
+    })
+
+    droparea.addEventListener('drop',e =>{
+        var dt = e.dataTransfer
+        var files = dt.files
+        handlefiles(files)
+    })
 
 
 

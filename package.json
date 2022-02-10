@@ -10,8 +10,8 @@
     "start": "node server.js",
     "start-env": "set port=5000&set tipo_p=MONGODB&node server.js",
     "start-dotenv": "node server.js",
-    "dev":"set NODE_ENV=development&nodemon server.js",
-    "prod":"set NODE_ENV=production&node server.js"
+    "dev": "set NODE_ENV=development&nodemon server.js",
+    "prod": "set NODE_ENV=production&node server.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.2",
-    "mongoose": "^6.2.1"
+    "mongoose": "^6.2.1",
+    "multer": "^1.4.4"
   }
 }

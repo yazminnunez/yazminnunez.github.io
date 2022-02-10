@@ -2,6 +2,7 @@
 //const routerproductos = require('./router/productos')
 import routerproductos from './router/productos.js'
 import routercarrito from './router/carrito.js'
+import routerupload from './router/upload.js'
 import express from 'express'
 import DB_mongo from './model/DB_Mongo.js'
 
@@ -19,6 +20,7 @@ app.use(express.urlencoded({extended: true}))
 
 app.use('/api/productos', routerproductos)
 app.use('/api/carrito',routercarrito)
+app.use('/upload',routerupload)
 
 const PORT = config.port
 const server = app.listen(PORT, () => console.log(`Servidor express escuchando en el puerto ${PORT}`))
