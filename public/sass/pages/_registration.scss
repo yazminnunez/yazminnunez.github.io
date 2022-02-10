@@ -62,7 +62,11 @@
                     margin-left: 1em;
             }
             }
-
+            @media (max-width:680px){
+                #progresss-bar{
+                    display: none;
+                }
+            }
 }
         .footer-container{ 
             margin: 0 auto;
@@ -141,8 +145,8 @@
         }
 
         #drop-area.highlight{
-            border-color: #1a80e7 ;
-            color: #1a80e7;
+            border-color: #0a66c2 ;
+            color: #0a66c2;
         }
 
         .button--registration{
