@@ -1284,7 +1284,6 @@ th, td {
   }
 }
 
-/* Checkout Payment Section - Start */
 .container_payment {
   display: block;
 }
@@ -1309,6 +1308,7 @@ th, td {
   padding-top: 40px;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Retroking";
 }
 
 .payment-form .block-heading p {
@@ -1322,11 +1322,11 @@ th, td {
 .payment-form .block-heading h2,
 .payment-form .block-heading h3 {
   margin-bottom: 1.2rem;
-  color: #009ee3;
+  color: #ce7807;
 }
 
 .payment-form .form-payment {
-  border-top: 2px solid #c6e9fa;
+  border-top: 2px solid #daa662;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
   background-color: #ffffff;
   padding: 0;
@@ -1338,8 +1338,10 @@ th, td {
   font-size: 1em;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 0.8em;
-  font-weight: 400;
+  font-weight: bold;
+  font-family: "Retroking";
   padding-bottom: 8px;
+  color: #ce7807;
 }
 
 .payment-form .products {
@@ -1383,16 +1385,16 @@ th, td {
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: #8c8c8c;
-  text-transform: uppercase;
+  color: #222020;
 }
 
 .payment-form button {
   margin-top: 0.6em;
   padding: 12px 0;
   font-weight: 500;
-  background-color: #009ee3;
+  background-color: #ce7807;
   margin-bottom: 10px;
+  font-family: "Retroking";
 }
 
 .payment-form .mercadopago-button {
@@ -1405,11 +1407,19 @@ th, td {
   margin: 0;
   padding: 0;
   font-size: 13px;
-  color: #009ee3;
+  color: #ce7807;
   cursor: pointer;
 }
 
 .payment-form a:not([href]):hover {
-  color: #3483fa;
+  color: #ce7807;
   cursor: pointer;
+}
+
+#go-back {
+  font-family: "Retroking";
+}
+
+.payment-details {
+  font-family: "Dongle", sans-serif;
 }/*# sourceMappingURL=main.css.map */
