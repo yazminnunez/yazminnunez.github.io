@@ -34,14 +34,16 @@ AgregaralCarrito(producto){
 async EnviarCarrito(){
     let elemsectioncarrito= document.querySelector('.section_carrito')
     elemsectioncarrito.innerHTML='<h2> Enviando carrito.. <h2>'
-    await CARRITO_SERVICE.GuardarCarrito(CARRITO_MODEL.Obtener())
+    let preference = await CARRITO_SERVICE.GuardarCarrito(CARRITO_MODEL.Obtener())
+    console.log(preference)
     elemsectioncarrito.innerHTML='<h2><br> Carrito enviado!!</br> </h2>'
     CARRITO_MODEL.Inicializar([])
     localStorage.setItem('carrito',CARRITO_MODEL.Obtener())
-    setTimeout(()=>{
+    setTimeout( async ()=>{
         elemsectioncarrito.classList.remove('section_carrito--visible')
-    mostrarcarrito= false 
-    },2000)
+        mostrarcarrito= false 
+        await renderPAGOS(preference)
+    },0)
 }
 
 
