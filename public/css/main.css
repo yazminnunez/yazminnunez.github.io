@@ -1248,6 +1248,7 @@ th, td {
 }
 
 .section_carrito {
+  margin: 1em auto;
   padding: 5px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1261,14 +1262,25 @@ th, td {
   font-size: 1.5em;
   background-image: url("../imagenes/fondo15.jpg");
   z-index: 1;
-  top: 150px;
-  left: 150px;
-  right: 150px;
-  bottom: 150px;
+  top: 1em;
+  left: 15em;
+  right: 20em;
+  bottom: 1.5em;
   box-shadow: 0.3em 0.3em 10em 0.3em black;
 }
 .section_carrito--visible {
   display: block;
+}
+.section_carrito_border {
+  border: 1px solid;
+  margin-left: 1.5em;
+  width: 17em;
+  padding: 0.6em;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+.section_carrito_photo {
+  width: 7em;
 }
 .section_carrito button.btn__comprarcarrito {
   float: right;
