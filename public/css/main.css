@@ -19,7 +19,6 @@ body {
   width: 29em;
   height: 20em;
   flex-wrap: wrap;
-  cursor: pointer;
 }
 .card__article {
   display: flex;
@@ -77,11 +76,25 @@ body {
   border: #fff5f5 double;
 }
 .card__price {
-  margin: 0.1em;
+  margin: 0.4em;
   font-weight: bold;
+  padding: 0.1em;
   color: black;
   font-size: 1.1em;
   background-color: seagreen;
+  border: 1px solid;
+}
+.card__price_carrito {
+  background-image: url("../imagenes/icons8-comprar-30.png");
+  background-repeat: no-repeat;
+  background-position: 90%;
+  font-size: 0.9em;
+  width: 10em;
+  margin: 0.3em auto;
+  background-color: #69cc94;
+  border: double;
+  padding: 0.3em;
+  cursor: pointer;
 }
 .card__position {
   position: relative;

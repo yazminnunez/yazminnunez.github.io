@@ -5,7 +5,7 @@
     width: 29em;
     height: 20em;
     flex-wrap: wrap;
-    cursor:pointer;
+    
 
     &__article {
         display: flex;
@@ -79,11 +79,27 @@
         border: rgb(255, 245, 245) double;
     }
     &__price {
-        margin: 0.1em;
+        margin: 0.4em;
         font-weight: bold;
+        padding: .1em;
         color: rgb(0, 0, 0);
         font-size: 1.1em;
         background-color: seagreen;
+        border: 1px solid;
+
+        &_carrito{
+        background-image: url("../imagenes/icons8-comprar-30.png");
+        background-repeat: no-repeat;
+        background-position: 90%;
+        font-size: .9em;
+        width: 10em;
+        margin: .3em auto;
+        background-color: rgb(105, 204, 148);
+        border: double ;
+        padding: .3em;
+        cursor:pointer;
+        }
+
     }
 
     &__position {
