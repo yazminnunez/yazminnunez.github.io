@@ -10,6 +10,10 @@ class CarritoController{
         }
     }
 
+    cerrar(){
+        window.close()
+    }
+
 AgregaralCarrito(producto){
 
     if(!CARRITO_MODEL.productoexiste(producto))

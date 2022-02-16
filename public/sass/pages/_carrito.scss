@@ -11,25 +11,32 @@
     background-image: url("../imagenes/fondo15.jpg");
     z-index: 1;
     top:1em;
-    left: 15em;
-    right: 20em;
+    left: 10em;
+    right: 15em;
     bottom: 1.5em;
     box-shadow:  .3em .3em 10em .3em rgba(0,0,0,1);
+    
 
     &--visible{
         display: block;
     }
     &_border{
-        border: 1px solid;
-        margin-left: 1.5em;
+        border: .1em solid rgb(214, 123, 11);
+        margin: .5em auto;
         width: 17em;
         padding: .6em;
-        display:inline-block;
+        display: flex;
         flex-wrap: wrap;
+        background-color: burlywood;
+        -webkit-box-shadow: 10px 6px 20px -6px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 6px 20px -6px rgba(0,0,0,0.75);
+        box-shadow: 10px 6px 20px -6px rgba(0,0,0,0.75);
     }
     &_photo{
         width: 7em;
+        margin: 0 auto;
     }
+    
     button.btn__comprarcarrito{
         float: right;
         margin: 15px;
@@ -43,17 +50,77 @@
         border-radius: .3em;
     }
     .button--carrito{
-        margin-left:  .5em;
+        margin: .1em 0 .2em 25em;
         padding: .3em;
         font-family: 'Retroking';
         font-size: .5.2em;
         color: black;
         background-color: rgb(206, 120, 7);
         border-radius: .3em;
+
     }
-    @media (max-width:550px){
-        overflow: scroll;
+    @media (max-width:1080px){
+        position: absolute;
+        font-size: 1.4em;
+        width: 75%;
+        height: 75%;
+        &--visible{
+            width: 75%;
+            height: 75%;
+            left: 1em;
+            
+        }
+        &_border{
+            display: flex;
+            font-size: 1.1em;
+        }
+    }
+    @media (max-width:980px){
+        position: absolute;
+        font-size: 1.4em;
+        width: 75%;
+        height: 75%;
+        &--visible{
+            width: 75%;
+            height: 75%;
+            left: 1em;
+            
+        }
+        &_border{
+            display: flex;
+            font-size: 1.1em;
+        }
     }
 
+
+
+    @media (max-width:780px){
+        position: absolute;
+        font-size: 1.2em;
+        &--visible{
+            width: 75%;
+            height: 75%;
+            left: 1em;
+            
+        }
+        &_border{
+            display: flex;
+            font-size: 1em;
+        }
+    }
+    @media (max-width:580px){
+        position: absolute;
+        font-size: 1em;
+        &--visible{
+            width: 85%;
+            height: 85%;
+            left: 1em;
+            
+        }
+        &_border{
+            display: flex;
+            font-size: .9em;
+        }
+    }
 
 }

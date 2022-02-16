@@ -1270,8 +1270,8 @@ th, td {
   background-image: url("../imagenes/fondo15.jpg");
   z-index: 1;
   top: 1em;
-  left: 15em;
-  right: 20em;
+  left: 10em;
+  right: 15em;
   bottom: 1.5em;
   box-shadow: 0.3em 0.3em 10em 0.3em black;
 }
@@ -1279,15 +1279,18 @@ th, td {
   display: block;
 }
 .section_carrito_border {
-  border: 1px solid;
-  margin-left: 1.5em;
+  border: 0.1em solid #d67b0b;
+  margin: 0.5em auto;
   width: 17em;
   padding: 0.6em;
-  display: inline-block;
+  display: flex;
   flex-wrap: wrap;
+  background-color: burlywood;
+  box-shadow: 10px 6px 20px -6px rgba(0, 0, 0, 0.75);
 }
 .section_carrito_photo {
   width: 7em;
+  margin: 0 auto;
 }
 .section_carrito button.btn__comprarcarrito {
   float: right;
@@ -1302,7 +1305,7 @@ th, td {
   border-radius: 0.3em;
 }
 .section_carrito .button--carrito {
-  margin-left: 0.5em;
+  margin: 0.1em 0 0.2em 25em;
   padding: 0.3em;
   font-family: "Retroking";
   font-size: 0.5 0.2em;
@@ -1310,9 +1313,68 @@ th, td {
   background-color: #ce7807;
   border-radius: 0.3em;
 }
-@media (max-width: 550px) {
+@media (max-width: 1080px) {
   .section_carrito {
-    overflow: scroll;
+    position: absolute;
+    font-size: 1.4em;
+    width: 75%;
+    height: 75%;
+  }
+  .section_carrito--visible {
+    width: 75%;
+    height: 75%;
+    left: 1em;
+  }
+  .section_carrito_border {
+    display: flex;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 980px) {
+  .section_carrito {
+    position: absolute;
+    font-size: 1.4em;
+    width: 75%;
+    height: 75%;
+  }
+  .section_carrito--visible {
+    width: 75%;
+    height: 75%;
+    left: 1em;
+  }
+  .section_carrito_border {
+    display: flex;
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 780px) {
+  .section_carrito {
+    position: absolute;
+    font-size: 1.2em;
+  }
+  .section_carrito--visible {
+    width: 75%;
+    height: 75%;
+    left: 1em;
+  }
+  .section_carrito_border {
+    display: flex;
+    font-size: 1em;
+  }
+}
+@media (max-width: 580px) {
+  .section_carrito {
+    position: absolute;
+    font-size: 1em;
+  }
+  .section_carrito--visible {
+    width: 85%;
+    height: 85%;
+    left: 1em;
+  }
+  .section_carrito_border {
+    display: flex;
+    font-size: 0.9em;
   }
 }
 
