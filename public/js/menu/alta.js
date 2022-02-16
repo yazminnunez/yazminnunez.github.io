@@ -144,8 +144,8 @@ function previewfile(file){
     xhr.open('POST',url)
 
     xhr.upload.addEventListener('progress',e =>{
-      let porcentaje = (e.loaded *100) / e.total
-      actualizarProgress(porcentaje)
+    let porcentaje = (e.loaded *100) / e.total
+    actualizarProgress(porcentaje)
     })
 
     xhr.addEventListener('load',() =>{

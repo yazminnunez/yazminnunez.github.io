@@ -10,10 +10,7 @@ class CarritoController{
         }
     }
 
-    cerrar(){
-        window.close()
-    }
-
+    
 AgregaralCarrito(producto){
 
     if(!CARRITO_MODEL.productoexiste(producto))
@@ -49,7 +46,6 @@ async EnviarCarrito(){
         await renderPAGOS(preference)
     },0)
 }
-
 
 }
 
