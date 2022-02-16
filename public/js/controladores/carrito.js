@@ -46,6 +46,13 @@ async EnviarCarrito(){
         await renderPAGOS(preference)
     },0)
 }
+    Cerrar(){ 
+    let elemsectioncarrito = document.querySelector('.section_carrito')      
+    elemsectioncarrito.classList.remove('section_carrito--visible')
+    mostrarcarrito = false 
+    }
+
+
 
 }
 
